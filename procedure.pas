@@ -1,8 +1,8 @@
 program untitled;
 
 uses crt;
-var Nombre,Apellido,cobertura,Tipo,Color: string; 
-Cedula,CantBoletos,Precio,Dinero:integer;
+var Nombre,Apellido,cobertura,Color: string; 
+Cedula,CantBoletos,Precio,Dinero,Tipo:integer;
 opcion,Comprar : string;
 
 BEGIN
@@ -15,10 +15,23 @@ BEGIN
 	Writeln('Ingrese su Cedula');Readln(Cedula);
 	writeln(Nombre,' ',Apellido);
 	writeln(Cedula);
-	
-	
-	
+	TextColor(10); Writeln; Writeln('¨Desea comprar un boleto? (s/n)');
+	Readln(opcion);
+	if opcion = ('s') then
+	TextColor(10); writeln('Seleccione el boleto de su preferencia');
+	TextColor(yellow); writeln('Simple');
+	TextColor(yellow); writeln('Integrado');
+	TextColor(yellow); writeln('Ida y Vuelta');
+	TextColor(yellow); writeln('Ida y Vuelta Integrado');
+	TextColor(lightred); writeln('Multiabono');
+	TextColor(lightred); writeln('Multiabono Integrado');
+	TextColor(lightblue); writeln('Estudiantil Simple');
+	TextColor(lightblue); writeln('Estudiantil Integrado');
+	TextColor(red); writeln('MetroTarjeta');
+	TextColor(red); writeln('MetroTarjeta Integrada');
+	case Tipo of
+	1:writeln('xd');
 
-	
-END.
 
+End;
+End.
