@@ -1,0 +1,184 @@
+[1mdiff --git a/Test.txt b/Test.txt[m
+[1mindex 8a66e8f..f49f00e 100644[m
+[1m--- a/Test.txt[m
+[1m+++ b/Test.txt[m
+[36m@@ -1 +1,2 @@[m
+[31m-Prueba de Git[m
+\ No newline at end of file[m
+[32m+[m[32m1-Prueba de Git[m
+[32m+[m[32m2-Cambios en el codigo[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/procedure.exe b/procedure.exe[m
+[1mindex 7ab50bb..269b50d 100644[m
+Binary files a/procedure.exe and b/procedure.exe differ
+[1mdiff --git a/procedure.o b/procedure.o[m
+[1mindex 597c7a0..e44556c 100644[m
+Binary files a/procedure.o and b/procedure.o differ
+[1mdiff --git a/procedure.pas b/procedure.pas[m
+[1mindex e1d56a2..88a33e9 100644[m
+[1m--- a/procedure.pas[m
+[1m+++ b/procedure.pas[m
+[36m@@ -2,13 +2,14 @@[m [mprogram untitled;[m
+ [m
+ uses [m
+ crt;[m
+[31m-var Nombre,Apellido,Salida,Destino,Tipo,vehiculo: string; [m
+[31m-Cedula,CBoletos,Precio,Dinero:integer;[m
+[32m+[m[32mvar Nombre,Apellido,Tipo,Salida,Destino: string;[m[41m [m
+[32m+[m[32mCedula,CBoletos,Precio,Dinero,vehiculo,Sub1,Sub2,Falta,Pago,Sistema:integer;[m[41m[m
+ opcion,Comprar : string;[m
+ [m
+[32m+[m[41m[m
+ procedure mostrar;[m
+ begin[m
+[31m-	TextColor(10); writeln('Seleccione el boleto de su preferencia');[m
+[32m+[m	[32mclrscr;TextColor(10); writeln('Seleccione el boleto de su preferencia');[m[41m[m
+ 	TextColor(yellow); writeln('1-Simple');[m
+ 	TextColor(yellow); writeln('2-Integrado');[m
+ 	TextColor(yellow); writeln('3-Ida y Vuelta');[m
+[36m@@ -18,27 +19,114 @@[m [mbegin[m
+ 	TextColor(lightblue); writeln('7-Estudiantil Simple');[m
+ 	TextColor(lightblue); writeln('8-Estudiantil Integrado');[m
+ 	TextColor(red); writeln('9-MetroTarjeta');[m
+[31m-	TextColor(red); writeln('10-MetroTarjeta Integrada');Readln(Tipo);[m
+[32m+[m	[32mTextColor(red); writeln('10-MetroTarjeta Integrada');textcolor(white);Readln(Tipo);[m[41m[m
+ 	textcolor(white);writeln('Cuantos boletos desea?');readln(CBoletos);[m
+ 	clrscr;[m
+ [m
+ end;[m
+ [m
+[32m+[m[41m[m
+ procedure Fin;[m
+ begin[m
+[31m-	writeln('Hasta la proxima');[m
+[32m+[m	[32mclrscr;writeln('Hasta la proxima');[m[41m[m
+ end;[m
+ [m
+ procedure Simple;[m
+ 	Begin[m
+ 	writeln('Boleto simple = 1 viaje en metro');Precio :=(CBoletos*5);[m
+[31m-	writeln('Debe pagar ',(Precio),'Bs Por los boletos');[m
+[32m+[m	[32mwriteln('Debe pagar ',(Precio),'Bs Por los boletos');readln;[m[41m[m
+ 	End;[m
+[32m+[m[41m[m
+ procedure Integrado;[m
+ begin[m
+[31m-	writeln('Boleto integrado = 1 viaje en metro y 1 un viaje en metrobus');Precio :=(CBoletos*8);[m
+[32m+[m	[32mclrscr;writeln('Boleto integrado = 1 viaje en metro y 1 un viaje en metrobus');Precio :=(CBoletos*8);[m[41m[m
+ 	writeln('Debe pagar ',(Precio),'Bs Por los boletos');[m
+[32m+[m	[32mwriteln('Seleccione 1 para viajar en metro o 2 para viajar en metrobus');read(vehiculo);[m[41m[m
+[32m+[m[32mend;[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mprocedure Linea1;[m[41m[m
+[32m+[m[32mbegin[m[41m[m
+[32m+[m	[32mclrscr;writeln('La linea 1 tiene las siguientes subestaciones disponibles');[m[41m[m
+[32m+[m	[32mwriteln(' ------------------------------------------');[m[41m[m
+[32m+[m	[32mwriteln('| 1Propatria          12Plaza Venezuela     |');[m[41m[m
+[32m+[m	[32mwriteln('| 2Perez Bonalde      13Sabana Grande       |');[m[41m[m
+[32m+[m	[32mwriteln('| 3Plaza Sucre        14Chacaíto          	 |');[m[41m[m
+[32m+[m	[32mwriteln('| 4Gato Negro         15Chacao              |');[m[41m[m
+[32m+[m	[32mwriteln('| 5Agua Salud         16Altamira            |');[m[41m[m
+[32m+[m	[32mwriteln('| 6Caño Amarillo      17Miranda             |');[m[41m[m
+[32m+[m	[32mwriteln('| 7Capitolio          18Los Dos Caminos     |');[m[41m[m
+[32m+[m	[32mwriteln('| 8La Moyada          19Los Cortijos        |');[m[41m[m
+[32m+[m	[32mwriteln('| 9Parque Carabobo    20La California       |');[m[41m[m
+[32m+[m	[32mwriteln('| 10Bellas Artes      21Petare              |');[m[41m[m
+[32m+[m	[32mwriteln('| 11Colegio de Ing    22Palo Verde          |');[m[41m[m
+[32m+[m	[32mwriteln(' -----------------------------------------');[m[41m[m
+[32m+[m	[32mwriteln;[m[41m[m
+[32m+[m	[32mwriteln('Seleccione la subestacion');Readln(Sub1);[m[41m[m
+[32m+[m[32mend;[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mprocedure Linea2;[m[41m[m
+[32m+[m[32mbegin[m[41m[m
+[32m+[m	[32mclrscr;writeln('La linea 2 tiene las siguientes subestaciones disponibles');[m[41m[m
+[32m+[m	[32mwriteln(' -------------------------------------------- ');[m[41m[m
+[32m+[m	[32mwriteln('|1-El Silencio     7Carapita                  |');[m[41m[m
+[32m+[m	[32mwriteln('|2-Capuchinos      8Antimano                  |');[m[41m[m
+[32m+[m	[32mwriteln('|3-Maternidad      9Mamera                    |');[m[41m[m
+[32m+[m	[32mwriteln('|4-Artiguas        10Caricuao                 |');[m[41m[m
+[32m+[m	[32mwriteln('|5-La Paz          11Zoologico                |');[m[41m[m
+[32m+[m	[32mwriteln('|6-La Yaguara      12Ruiz Pineda/Las Adjuntas |');[m[41m[m
+[32m+[m	[32mwriteln(' -------------------------------------------- ');[m[41m[m
+[32m+[m	[32mwriteln();[m[41m[m
+[32m+[m	[32mwriteln('Seleccione la subestacion');Readln(Sub2);[m[41m[m
+[32m+[m[32mend;[m[41m[m
+[32m+[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mprocedure Factura;[m[41m[m
+[32m+[m[32mbegin[m[41m[m
+[32m+[m	[32mclrscr;writeln('Debe pagar ',(Precio),'Bs Por los boletos');[m[41m[m
+[32m+[m	[32mwriteln('En este momento usted tiene ',Dinero,' Bs');[m[41m[m
+[32m+[m	[32mif dinero < precio then[m[41m [m
+[32m+[m	[32mFalta:=(Dinero-Precio);[m[41m[m
+[32m+[m	[32mwriteln('Necesita ',Falta,' Bs para realizar la compra');[m[41m[m
+[32m+[m	[32mwriteln('Porfavor ingrese la cantidad faltante');Readln(Dinero);[m[41m[m
+[32m+[m	[32mPago := (Dinero-Precio);writeln('Compra exitosa!');[m[41m[m
+[32m+[m	[32mif Pago > 0 then writeln('Le ha quedado ',Pago,' Bs');[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mend;[m[41m[m
+[32m+[m[41m[m
+[32m+[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mprocedure Viaje;[m[41m[m
+[32m+[m[32mbegin[m[41m[m
+[32m+[m	[32mclrscr;Writeln('Seleccione la linea de salida');readln(Salida);[m[41m[m
+[32m+[m	[32mif Salida = '1' then Linea1;[m[41m[m
+[32m+[m	[32mif Salida = '2' then Linea2;[m[41m[m
+[32m+[m[41m	[m
+[32m+[m	[32mWriteln('Seleccione la linea de Destino');Readln(Destino);[m[41m[m
+[32m+[m	[32mif Destino = '1' then Linea1;[m[41m[m
+[32m+[m	[32mif Destino = '2' then Linea2;[m[41m[m
+[32m+[m[41m	[m
+[32m+[m	[32mwriteln;[m[41m[m
+[32m+[m	[32mwriteln('Estos son sus datos');[m[41m[m
+[32m+[m	[32mwriteln(Nombre,' ',Apellido);[m[41m[m
+[32m+[m	[32mwriteln(Cedula);[m[41m[m
+[32m+[m	[32mwriteln('Salida de Linea ',Salida,' ',Sub1,' Destino Linea ',Destino,' ',Sub2);[m[41m[m
+[32m+[m	[32mwriteln('Desea realizar la compra? <s/n>');Readln(Comprar);[m[41m[m
+[32m+[m	[32mif Comprar = 's' then Factura;[m[41m[m
+[32m+[m	[32mif Comprar = 'S' then Factura;[m[41m[m
+[32m+[m	[32mif Comprar = 'n' then Fin;[m[41m[m
+[32m+[m	[32mif Comprar = 'N' then Fin;[m[41m[m
+ end;[m
+[32m+[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mprocedure terminal;[m[41m[m
+[32m+[m[32mbegin[m[41m[m
+[32m+[m[32mwriteln('Selecione una opcion');[m[41m[m
+[32m+[m[32mwriteln('1 Ver Sistema');[m[41m[m
+[32m+[m[32mwriteln('2 Utilizar Boleto');[m[41m[m
+[32m+[m[32mwriteln('3 Salir del Sistema');readln(Sistema);[m[41m[m
+[32m+[m[32mif Sistema = 3 then Fin;[m[41m[m
+[32m+[m[32mend;[m[41m[m
+[32m+[m[41m[m
+ BEGIN[m
+ 	writeln(' ------------------------------- ');[m
+ 	writeln('|       VENTA DE BOLETOS         |');[m
+[36m@@ -47,18 +135,23 @@[m [mBEGIN[m
+ 	Writeln('Ingrese su Nombre');Readln(Nombre);[m
+ 	Writeln('Ingrese su Apellido');Readln(Apellido);[m
+ 	Writeln('Ingrese su Cedula');Readln(Cedula);[m
+[32m+[m	[32mWriteln('Ingrese la cantidad de dinero disponible');Readln(Dinero);[m[41m[m
+ 	writeln(Nombre,' ',Apellido);[m
+[31m-	writeln(Cedula);[m
+[32m+[m	[32mwriteln(Cedula,' ',Dinero);[m[41m[m
+ 	TextColor(10); Writeln; Writeln('¨Desea comprar un boleto? (s/n)');[m
+ 	Readln(opcion);[m
+ 	if opcion = ('s') then mostrar;[m
+[32m+[m	[32mif opcion = ('S') then mostrar;[m[41m[m
+ 	if opcion = ('n') then Fin;[m
+[32m+[m	[32mif opcion = ('N') then Fin;[m[41m[m
+ [m
+[31m-	[m
+ 	if Tipo = '1' then Simple;[m
+ 	if Tipo = '2' then Integrado;[m
+[32m+[m	[32mif opcion = ('s') then Viaje;[m[41m[m
+[32m+[m	[32mif opcion = ('s') then terminal;[m[41m[m
+ [m
+[31m-	[m
+ [m
+ [m
+[32m+[m[41m	[m
+[32m+[m[41m[m
+ End.[m
