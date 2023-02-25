@@ -1,3 +1,4 @@
 1-Prueba de Git
 2-Cambios en el codigo 
 3-Se añadieron nuevos comandos
+4-Se corrigio el espacio entre algunos comandos
