@@ -10,7 +10,7 @@ Cedula,Cedula2,Precio,Dinero: longint;
 
 procedure mostrar;
 begin
-	clrscr;				writeln('Seleccione el Boleto de su Preferencia');Readln();
+	clrscr;				 writeln('Seleccione el Boleto de su Preferencia');Readln();
 						Writeln(' -----------------------------------------------------------------------------------------------------');
 						writeln('|1  Simple                         Amarillo       1 Viaje en metro                              (5BS)  |');
 						Writeln('|2  Integrado                      Amarillo       1 Viaje en metro y  1 Viaje en metrobus       (10BS) |');
@@ -44,7 +44,7 @@ end;
 
 procedure Fin;
 begin
-	clrscr;CBoletos:=(0);writeln('Hasta la proxima');
+	  clrscr;CBoletos:=(0);writeln('Hasta la proxima');
 end;
 
 procedure Simple;
@@ -111,7 +111,7 @@ begin
 	writeln('Debe pagar ',(Precio),'Bs Por los boletos');readln;
 
 end;
-procedure Estudiantil_Integrado;
+procedure  Estudiantil_Integrado;
 begin
 	Tipo:= 'Estudiantil_Integrado';
 	writeln('De que modo quiere transportarse');
@@ -122,7 +122,7 @@ begin
 	writeln('Debe pagar ',(Precio),'Bs Por los boletos');readln;
 
 end;
-procedure MetroTarjeta;
+procedure  MetroTarjeta;
 begin
 	Tipo:= 'MetroTarjeta';
 	writeln('De que modo quiere transportarse');
@@ -224,29 +224,29 @@ begin
 		   
 	writeln('Seleccione la estacion de destino');Readln(Sub2);
 	
-	if Sub1 = 1 then Des := 'Propatria';
-	if Sub2 = 2 then Des := 'Perez Bonalde';
-	if Sub2 = 3 then Des := 'Plaza Sucre';
-	if Sub2 = 4 then Des := 'Gato Negro  ';
-	if Sub2 = 5 then Des := 'Agua Salud ';
-	if Sub2 = 6 then Des := 'Cano Amarillo ';
-	if Sub2 = 7 then Des := ' Capitolio';
-	if Sub2 = 8 then Des := ' La Moyada';
-	if Sub2 = 9 then Des := ' Parque Carabobo';
-	if Sub2 = 10 then Des := ' Bellas Artes';
-	if Sub2 = 11 then Des := ' Colegio de Ing';
-	if Sub2 = 12 then Des := 'Plaza Venezuela';
-	if Sub2 = 13 then Des := 'Sabana Grande';
-	if Sub2 = 14 then Des := 'Chacaito';
-	if Sub2 = 15 then Des := 'Chacao';
-	if Sub2 = 16 then Des := 'Altamira';
-	if Sub2 = 17 then Des := 'Miranda';
-	if Sub2 = 18 then Des := 'Los Dos Caminos';
-	if Sub2 = 19 then Des := 'Los Cortijos';
-	if Sub2 = 20 then Des := 'La California';
-	if Sub2 = 21 then Des := 'Petare';
-	if Sub2 = 22 then Des := 'Palo Verde';
-	if Sub2 = (Sub1) then Des := 'Estacion Salida';
+	           if Sub1 = 1 then Des := 'Propatria';
+	           if Sub2 = 2 then Des := 'Perez Bonalde';
+	           if Sub2 = 3 then Des := 'Plaza Sucre';
+	           if Sub2 = 4 then Des := 'Gato Negro  ';
+	           if Sub2 = 5 then Des := 'Agua Salud ';
+	           if Sub2 = 6 then Des := 'Cano Amarillo ';
+	           if Sub2 = 7 then Des := ' Capitolio';
+	           if Sub2 = 8 then Des := ' La Moyada';
+	           if Sub2 = 9 then Des := ' Parque Carabobo';
+	           if Sub2 = 10 then Des := ' Bellas Artes';
+	           if Sub2 = 11 then Des := ' Colegio de Ing';
+	           if Sub2 = 12 then Des := 'Plaza Venezuela';
+	           if Sub2 = 13 then Des := 'Sabana Grande';
+	           if Sub2 = 14 then Des := 'Chacaito';
+	           if Sub2 = 15 then Des := 'Chacao';
+	           if Sub2 = 16 then Des := 'Altamira';
+	           if Sub2 = 17 then Des := 'Miranda';
+	           if Sub2 = 18 then Des := 'Los Dos Caminos';
+	           if Sub2 = 19 then Des := 'Los Cortijos';
+	           if Sub2 = 20 then Des := 'La California';
+	           if Sub2 = 21 then Des := 'Petare';
+	           if Sub2 = 22 then Des := 'Palo Verde';
+	           if Sub2 = (Sub1) then Des := 'Estacion Salida';
 	
 		while (Sub2 <> 1) and (Sub2 <> 2) and (Sub2 <> 3)  and (Sub2 <> 4)  
 				and (Sub2 <> 5)  and (Sub2 <> 6)  and (Sub2 <> 7)  and (Sub2 <> 8)  
