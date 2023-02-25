@@ -147,7 +147,7 @@ end;
 
 
 
-procedure Linea1;
+procedure   Linea1;
 begin
 	clrscr;writeln('La linea 1 tiene las siguientes estaciones disponibles');
 	writeln(' ---------------------------------------------');
@@ -188,7 +188,7 @@ begin
 	if Sub1 = 21 then Sal := 'Petare';
 	if Sub1 = 22 then Sal := 'Palo Verde';
 	
-	while (Sub1 <> 1) and (Sub1 <> 2) and (Sub1 <> 3)  and (Sub1 <> 4)  
+	      while (Sub1 <> 1) and (Sub1 <> 2) and (Sub1 <> 3)  and (Sub1 <> 4)  
 				and (Sub1 <> 5)  and (Sub1 <> 6)  and (Sub1 <> 7)  and (Sub1 <> 8)  
 				and (Sub1 <> 9)  and (Sub1 <> 10)  and (Sub1 <> 11)  and (Sub1 <> 12)  
 				and (Sub1 <> 13)  and (Sub1 <> 14)  and (Sub1 <> 15)  and (Sub1 <> 16)  
@@ -196,7 +196,7 @@ begin
 				and (Sub1 <> 21)  and (Sub1 <> 22)  do			
 				
 begin
-           write('Por favor elige una opcion en pantalla : '); 
+              write('Por favor elige una opcion en pantalla : '); 
 	       readln(Sub1);
 	       if Sub1 = 1 then Sal := 'Propatria';
 		   if Sub1 = 2 then Sal := 'Capitolio';
@@ -315,7 +315,7 @@ begin
 					and (Sub1 <> 5)  and (Sub1 <> 6)  and (Sub1 <> 7)  and (Sub1 <> 8)  
 					and (Sub1 <> 9)  and (Sub1 <> 10)  and (Sub1 <> 11)  and (Sub1 <> 12) do
 begin
-           write('Por favor elige una opcion en pantalla : '); 
+              write('Por favor elige una opcion en pantalla : '); 
 	       readln(Sub1);
 	       if Sub1 = 1 then Sal := 'El Silencio';
 		   if Sub1 = 2 then Sal := 'Capuchinos';
@@ -330,8 +330,8 @@ begin
 		   if Sub1 = 11 then Sal := 'Zoologico';
 		   if Sub1 = 12 then Sal := 'Ruiz Pineda/Las Adjuntas';
 		   end;
-	writeln('Seleccione la estacion de destino');Readln(Sub2);
-	       if Sub2 = 1 then Sal := 'El Silencio';
+	      writeln('Seleccione la estacion de destino');Readln(Sub2);
+	        if Sub2 = 1 then Sal := 'El Silencio';
 		   if Sub2 = 2 then Sal := 'Capuchinos';
 		   if Sub2 = 3 then Sal := 'Maternidad';
 		   if Sub2 = 4 then Sal := 'Artiguas';
@@ -348,7 +348,7 @@ begin
 					and (Sub2 <> 5)  and (Sub2 <> 6)  and (Sub2 <> 7)  and (Sub2 <> 8)  
 					and (Sub2 <> 9)  and (Sub2 <> 10)  and (Sub2 <> 11)  and (Sub2 <> 12) do
 begin
-           write('Por favor elige una opcion en pantalla : '); 
+              write('Por favor elige una opcion en pantalla : '); 
 	       readln(Sub2);
 	       if Sub2 = 1 then Sal := 'El Silencio';
 		   if Sub2 = 2 then Sal := 'Capuchinos';
@@ -391,7 +391,7 @@ begin
 				and (Sub1 <> 5)  and (Sub1 <> 6)  and (Sub1 <> 7)  and (Sub1 <> 8)  
 				and (Sub1 <> 9) do
 begin
-           write('Por favor elige una opcion en pantalla : '); 
+              write('Por favor elige una opcion en pantalla : '); 
 	       readln(Sub1);
 	       if Sub1 = 1 then Sal := 'Plaza Venezuela';
 		   if Sub1 = 2 then Sal := 'Ciudad Universitaria';
@@ -403,7 +403,7 @@ begin
 		   if Sub1 = 8 then Sal := 'Meracdo';
 		   if Sub1 = 9 then Sal := 'La Rinconada';
 		   end;
-	writeln('Seleccione la estacion de destino');Readln(Sub2);
+	       writeln('Seleccione la estacion de destino');Readln(Sub2);
 		   if Sub2 = 1 then Des := 'Plaza Venezuela';
 		   if Sub2 = 2 then Des := 'Ciudad Universitaria';
 		   if Sub2 = 3 then Des := 'Los Simbolos';
@@ -418,7 +418,7 @@ begin
 				and (Sub2 <> 5)  and (Sub2 <> 6)  and (Sub2 <> 7)  and (Sub2 <> 8)  
 				and (Sub2 <> 9) do		
 begin
-           write('Por favor elige una opcion en pantalla : '); 
+              write('Por favor elige una opcion en pantalla : '); 
 	       readln(Sub2);
 	       		   if Sub2 = 1 then Des := 'Plaza Venezuela';
 		   if Sub2 = 2 then Des := 'Ciudad Universitaria';
