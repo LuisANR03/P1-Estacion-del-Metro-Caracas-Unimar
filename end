@@ -61,7 +61,7 @@ Binary files a/procedure.o and b/procedure.o differ
 [m
  end;[m
  [m
- procedure Simple;[m
+  procedure Simple;[m
  	Begin[m
  	writeln('Boleto simple = 1 viaje en metro');Precio :=(CBoletos*5);[m
 [31m-	writeln('Debe pagar ',(Precio),'Bs Por los boletos');[m
